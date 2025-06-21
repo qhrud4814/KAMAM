@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- TODO : isotope 공홈 : https://isotope.metafizzy.co/ -->
+    <!-- TODO : 공통 css -->
+    <link rel="stylesheet" href="./css/00_style.css" />
+    <!-- TODO : 나의 css -->
+    <link rel="stylesheet" href="./css/06_sandals.css" />
+    <!-- TODO : 1) Swiper js(캐러셀, 이미지 회전) css 넣기 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <div id="page">
+      <!-- TODO : fab 화살표 추가 -->
+      <div id="fab"></div>
+      <!-- TODO : 메뉴 -->
+      <nav>
+        <h1 class="brand"><a href="./index.html">Kamam</a></h1>
+        <div class="fab">
+          <a href="#none"><img src="./img/menu.jpg" alt="메뉴" /></a>
+        </div>
+        <ul class="menu">
+          <li><a href="./shop.html">shop</a></li>
+          <li><a href="#none">serch</a></li>
+          <li><a href="#none">cart</a></li>
+          <li><a href="#none">sign up</a></li>
+        </ul>
+      </nav>
+
+      <!-- TODO : 여기 스와이프 적용(배너) -->
+      <div class="swiper mySwiper clear">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <!-- TODO : 1번째 배경이미지 -->
+            <div class="main-banner"></div>
+          </div>
+        </div>
+      </div>
+      <!-- TODO : 본문 -->
+      <div class="today-best clear">
+        <div class="best-product">
+          <p>COLLECTION</p>
+        </div>
+        <!-- TODO : 목록(필터: *, 구두, 운동화) -->
+        <ul class="product-list clear">
+          <li data-filter="*"><a href="#none">SANDAL</a></li>
+        </ul>
+      </div>
+      <!-- TODO : 화면에 필터링되는 이미지들 -->
+      <div class="product-box clear">
+        <div class="product">
+          <img src="./img/sandals.jpg" alt="샌들" />
+        </div>
+        <div class="product">
+          <img src="./img/sandals2.jpg" alt="샌들" />
+        </div>
+        <div class="product">
+          <img src="./img/sandals3.jpg" alt="샌들" />
+        </div>
+        <div class="product">
+          <img src="./img/sandals4.jpg" alt="샌들" />
+        </div>
+        <div class="product">
+          <img src="./img/sandals5.jpg" alt="샌들" />
+        </div>
+        <div class="product">
+          <img src="./img/sandals6.jpg" alt="샌들" />
+        </div>
+        <div class="product">
+          <img src="./img/sandals7.jpg" alt="샌들" />
+        </div>
+        <div class="product">
+          <img src="./img/sandals8.jpg" alt="샌들" />
+        </div>
+        <div class="product">
+          <img src="./img/sandals9.jpg" alt="샌들" />
+        </div>
+        <div class="product">
+          <img src="./img/sandals10.jpg" alt="샌들" />
+        </div>
+        <div class="product">
+          <img src="./img/sandals11.jpg" alt="샌들" />
+        </div>
+        <div class="product">
+          <img src="./img/sandals12.jpg" alt="샌들" />
+        </div>
+        <div class="product">
+          <img src="./img/sandals13.jpg" alt="샌들" />
+        </div>
+        <div class="product">
+          <img src="./img/sandals14.jpg" alt="샌들" />
+        </div>
+        <div class="product">
+          <img src="./img/sandals15.png" alt="샌들" />
+        </div>
+        <div class="product">
+          <img src="./img/sandals16.jpg" alt="샌들" />
+        </div>
+        <div class="product">
+          <img src="./img/sandals17.jpg" alt="샌들" />
+        </div>
+        <div class="product">
+          <img src="./img/sandals18.jpg" alt="샌들" />
+        </div>
+        <div class="product">
+          <img src="./img/sandals19.jpg" alt="샌들" />
+        </div>
+        <div class="product">
+          <img src="./img/sandals20.jpg" alt="샌들" />
+        </div>
+        <div class="product">
+          <img src="./img/sandals21.jpg" alt="샌들" />
+        </div>
+      </div>
+      <!-- TODO : 꼬리말 -->
+      <footer class="clear">
+        <div id="address-detail">
+          <h3>고객센터|톡톡문의|카톡문의</h3>
+          <p>
+            Mon-Fri 10:00 ~ 18:00 Sat, Sun | Holiday | <br />
+            12:00 ~ 13:00 OFF
+          </p>
+          <p>company : Kamam</p>
+          <p>address : 687-1 , Jungang-daero, jin-gu, Busan</p>
+          <p>registration no : 000-00-00000</p>
+          <p>e-mail_qkrqhrud147@naver.com</p>
+          <p>customer services : 051-000-0000</p>
+        </div>
+
+        <div id="customer">
+          <p>회원혜택</p>
+          <p>이용안내</p>
+          <p>이용약관</p>
+          <p>교환/반품 문의</p>
+          <p>개인정보처리방침</p>
+        </div>
+        <div id="owner">
+          <p>owner _Su-a Park</p>
+        </div>
+      </footer>
+    </div>
+    <!-- TODO : jquery cdn(인터넷주소) -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- TODO : 2) Swiper JS: 공식사이트) https://swiperjs.com/demos -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- TODO : isotope cdn(인터넷주소) -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <!-- TODO : 나의 js -->
+    <script src="./js/01_index.js"></script>
+  </body>
+</html>

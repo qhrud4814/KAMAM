@@ -1,0 +1,37 @@
+/* 웹폰트: 영문(Castoro Titling), 한글(Noto Sans KR) */
+@import url("https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
+/* TODO: 피그마에서 제가 색상팔레트-> css 뽑기 */
+:root {
+  /* Color styles */
+  --black: rgba(0, 0, 0, 1);
+  --white: rgba(255, 255, 255, 1);
+  /* Text-size styles */
+  --h1: 36px;
+  --h2: 24px;
+  --h3: 18px;
+  --h4: 16px;
+  --body: 14px;
+  --button: 14px;
+  --caption-1: 12px;
+  --caption-2: 12px;
+}
+
+/* 공통디자인: 마진/패딩 0 */
+* {
+  margin: 0;
+  padding: 0;
+  /* TODO: width/height 기준: 외곽선 변경 */
+  box-sizing: border-box;
+}
+/* body: 웹폰트 */
+body {
+  font-family: "Castoro Titling", serif;
+}
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: var(--black);
+}

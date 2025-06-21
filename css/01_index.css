@@ -1,0 +1,270 @@
+/* TODO : 머리말 */
+#page {
+  width: 99vw;
+  margin: 0 auto;
+}
+nav {
+  width: 100%;
+  margin: 0 auto;
+}
+.brand {
+  text-align: center;
+  padding: 1.5rem;
+  font-weight: 100;
+  font-size: 2rem;
+}
+.fab img {
+  width: 2rem;
+}
+.fab {
+  position: absolute;
+  left: 15px;
+  top: 25px;
+}
+.menu li {
+  float: left;
+  width: 50%;
+  border: 1px solid var(--black);
+}
+.menu li a {
+  display: block;
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu {
+  margin: 0 15px 0 15px;
+}
+.menu li a:hover {
+  background-color: var(--black);
+  color: var(--white);
+}
+/* TODO : 배너1 */
+.main-banner {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../img/Banner1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+/* TODO : 배너2 */
+.main-banner2 {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../img/Banner2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+/* TODO : 배너3 */
+.main-banner3 {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../img/Banner3.jpg ");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.clear {
+  clear: both;
+}
+/* TODO : 본문 */
+.container {
+  width: 100%;
+}
+.content-box {
+  float: left;
+  width: 100%;
+}
+.content-box > img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+.content-box p {
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 2rem;
+}
+/* TODO : 꼬리말 */
+.clear {
+  clear: both;
+}
+#address-detail h3 {
+  font-weight: 400;
+  font-family: "Noto Sans KR", sans-serif;
+  text-align: center;
+  padding: 5px;
+}
+#address-detail p {
+  text-align: center;
+}
+#customer {
+  float: left;
+}
+#customer p {
+  font-weight: 400;
+  font-family: "Noto Sans KR", sans-serif;
+  margin-left: 20px;
+}
+#owner {
+  float: right;
+  margin-top: 100px;
+  margin-right: 20px;
+}
+/* TODO: 태블릿 */
+@media screen and (min-width: 768px) {
+  .fab {
+    margin-top: 6px;
+  }
+  .brand {
+    float: left;
+    margin-left: 25px;
+    font-size: 2.6rem;
+  }
+  .menu {
+    float: right;
+  }
+  .menu li {
+    border: none;
+    width: auto;
+  }
+  .menu li a {
+    padding: 0 0.6rem 0 0.6rem;
+    font-size: 1.5rem;
+  }
+  .container {
+    display: table;
+    width: 90%;
+  }
+  .content-area {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    margin-left: 10px;
+  }
+  .content-box {
+    display: none;
+  }
+  .group1 {
+    width: 99vw;
+    height: 50vh;
+    background-image: url("../img/Group\ 1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    vertical-align: bottom;
+  }
+  .group2 {
+    width: 99vw;
+    height: 50vh;
+    background-image: url("../img/Group\ 2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    vertical-align: bottom;
+  }
+  .group3 {
+    width: 99vw;
+    height: 50vh;
+    background-image: url("../img/Group\ 3.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    vertical-align: bottom;
+  }
+  .product-list li {
+    border: none;
+    width: auto;
+  }
+  .product {
+    width: 25%;
+  }
+  .product-list li a {
+    background-color: var(--white);
+    color: var(--black);
+    padding: 1rem 0.6rem 1rem 0.6rem;
+  }
+}
+/* TODO: 태블릿 */
+@media screen and (min-width: 820px) {
+  .brand {
+    font-size: 3rem;
+    margin-top: 10px;
+  }
+  .menu {
+    margin-top: 20px;
+  }
+  .fab {
+    font-size: 3rem;
+    margin-top: 10px;
+  }
+  /* TODO : 배너1 */
+  .main-banner {
+    width: 95%;
+    margin-left: 20px;
+  }
+  /* TODO : 배너2 */
+  .main-banner2 {
+    width: 95%;
+    margin-left: 20px;
+  }
+  /* TODO : 배너3 */
+  .main-banner3 {
+    width: 95%;
+    margin-left: 20px;
+  }
+  .group1 {
+    width: 95vw;
+    height: 40vh;
+    margin-left: 15px;
+  }
+  .group2 {
+    width: 95vw;
+    height: 40vh;
+    margin-left: 15px;
+  }
+  .group3 {
+    width: 95vw;
+    height: 35vh;
+    margin-left: 15px;
+  }
+}
+/* TODO: 태블릿 , PC */
+@media screen and (min-width: 1024px) {
+  /* TODO : 배너1 */
+  .main-banner {
+    width: 96%;
+    height: 200vh;
+    margin-left: 20px;
+  }
+  /* TODO : 배너2 */
+  .main-banner2 {
+    width: 96%;
+    height: 200vh;
+    margin-left: 20px;
+  }
+  /* TODO : 배너3 */
+  .main-banner3 {
+    width: 96%;
+    height: 200vh;
+    margin-left: 20px;
+  }
+  .group1 {
+    margin-left: 20px;
+    height: 110vh;
+  }
+  .group2 {
+    margin-left: 20px;
+    height: 110vh;
+  }
+  .group3 {
+    margin-left: 20px;
+    height: 90vh;
+  }
+}
